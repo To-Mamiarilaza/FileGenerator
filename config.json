@@ -1,0 +1,14 @@
+{
+    "language": "java",
+    "package": "test",
+    "database": "postgresql",
+    "host": "localhost",
+    "port": "5432",
+    "username": "postgres",
+    "password": "postgres",
+    "databaseName": "fiche_employe",
+    "outputDir" : "./test",
+    "overWriteOnReScaffold": true,
+    "createApiController": true,
+    "controllerType": "spring"
+}

@@ -1,0 +1,13 @@
+#package#
+
+#imports#
+
+#restAnnotation#
+#restMapping#
+#CORS#
+public class #className#Controller {
+
+    #DBContext#
+
+    #crudMethods#
+}

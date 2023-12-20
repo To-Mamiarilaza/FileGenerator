@@ -1,0 +1,48 @@
+{
+    "language": "java",
+    "database": {
+        "databaseType": "postgresql",
+        "host": "localhost",
+        "port": "5432",
+        "username": "postgres",
+        "password": "postgres",
+        "databaseName": "fiche_employe"
+    },
+    "outputDir" : "./sourceCode",
+    "overwriteOnReScaffold": true,
+    "targetTables": [
+        {
+            "tableName": "language", 
+            "package": "models", 
+            "repositoryPackage": "repository",
+            "controller": {
+                "generate": true,
+                "controllerName": "LanguageController",
+                "controllerType": "spring",
+                "controllerPackage": "controller",
+                "requestMapping": "/api/fiche"
+            }
+        },
+        {
+            "tableName": "fiche", 
+            "package": "models", 
+            "repositoryPackage": "repository",
+            "controller": {
+                "generate": true,
+                "controllerName": "FicheController",
+                "controllerType": "spring",
+                "controllerPackage": "controller",
+                "requestMapping": "/api/fiche"
+            }
+        }
+    ],
+    "generateAllTables": {
+        "value": true,
+        "classPackage": "models",
+        "repositoryPackage": "repository",
+        "generateController": true,
+        "controllerPackage": "controllers",
+        "controllerType": "spring",
+        "endPoint": "/api"
+    }
+}
